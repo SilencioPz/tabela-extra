@@ -1,0 +1,48 @@
+body {
+    background-color: black;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-size: 35px;
+  }
+  
+  table {
+    margin: auto;
+  }
+
+  h2 {
+    text-align: center;
+    text-decoration: underline;
+  }
+
+  #saldoInicialCell {
+    text-align: center;
+  }  
+
+  #saldoRestanteCell {
+    text-align: center;
+  }  
+
+  #content {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 20px;
+  }
+  
+  #tabela {
+    float: left;
+    width: 50%;
+  }
+  
+  #imagem {
+    float: right;
+    width: 50%;
+    background-image: url("fundo.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+  }  
+  

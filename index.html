@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saldo Senhor João Irineu da Silva </title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+    <div id="tabela">
+        <!-- Sua tabela vai aqui -->
+    <h2>Tabela de Compras do João:</h2>
+
+<table id="compras" border="1" width="50%" align="center">
+  <tr height="50">
+    <th valign="middle">Compra</th>
+    <th valign="middle">Valor</th>
+    <th id= "saldoRestanteCell" valign="middle">Saldo Restante</th>
+  </tr>
+  <tr height="50">
+    <td id="saldoInicialCell" valign="middle">Saldo Inicial</td>
+    <td></td>
+    <td id="saldoInicialCell"
+    valign="middle">1000</td>
+  </tr>
+</table>
+
+<script>
+var compras = [200, 150, 75];
+var saldo = 1000;
+var tabela = document.getElementById("compras");
+
+for (var i = 0; i < compras.length; i++) {
+  saldo -= compras[i];
+  var row = tabela.insertRow(-1);
+  row.height = "50";
+  var cell1 = row.insertCell(0);
+  var cell2 = row.insertCell(1);
+  var cell3 = row.insertCell(2);
+  cell1.innerHTML = "Compra " + (i+1);
+  cell1.align = "center";
+  cell1.valign = "middle";
+  cell2.innerHTML = compras[i];
+  cell2.align = "center";
+  cell2.valign = "middle";
+  cell3.innerHTML = saldo;
+  cell3.align = "center";
+  cell3.valign = "middle";
+}
+
+var row = tabela.insertRow(-1);
+row.height = "50";
+var cell1 = row.insertCell(0);
+var cell2 = row.insertCell(1);
+var cell3 = row.insertCell(2);
+cell1.innerHTML = "Saldo Final";
+cell1.align = "center";
+cell1.valign = "middle";
+cell2.innerHTML = "";
+cell3.innerHTML = saldo;
+cell3.align = "center";
+cell3.valign = "middle";
+</script>
+</div>
+<div id="imagem"></div>
+</body>
+</html>
